@@ -1,0 +1,47 @@
+p{
+    font-size: 20px;
+}
+div > .class-6{
+    color: black;
+}
+
+.class-1{
+    color:coral;
+
+}
+
+.class-2.class-3{
+    color: green;
+
+}
+.class-4{
+    
+}
+
+.class-5{
+    color: pink;
+    
+}
+.class-6{
+    color: blue;
+    
+}
+.class-7.class-8{
+    color: black;
+    
+}
+
+.class-9{
+    
+}
+.class-10{
+    
+}
+
+li{
+    color: darkmagenta;
+}
+
+h3, h4{
+    color:darkred;
+}
