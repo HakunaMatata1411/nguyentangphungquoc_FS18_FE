@@ -1,0 +1,31 @@
+body{
+    font-size: 24px;
+}
+
+.box1{
+    font-size: 5vw;
+    background-color: aqua;
+    width: 20vw;
+    height: 10vw;
+}
+
+.box2{
+    font-size: 5vw;
+    background-color: yellow;
+    width: 20vw;
+    height: 20vw;
+}
+
+.box3{
+    font-size: 5vw;
+    background-color: green;
+    width: 60vw;
+    height: 10vw;
+}
+
+.box4{
+    font-size: 5vw;
+    background-color: rebeccapurple;
+    width: 20vw;
+    height: 10vw;
+}
