@@ -1,0 +1,47 @@
+03/06/2023
+rem,
+em: ảnh hưởng đến thẻ gần nhất của nó
+
+<h1>Pseudo classes trong CSS</h1>
+    <ol>
+        <li>:root</li>
+        <li>:hover</li>
+        <li>:active</li>
+        <li>:first-child</li>
+        <li>:last-child</li>
+    </ol>
+
+    Bài 1: Hover vào nút, nút chuyển sang màu nền rgba 240, 81, 35, 0.8
+    <a class="button" href="https://www.youtube.com/">Youtube</a>
+     .button {
+    /* Thêm phần đệm, cho nút dày lên */
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #f05123;
+    /* Bỏ gạch chân mặc định của thẻ a */
+    text-decoration: none;
+Bài 2: lớp giả
+
+<h1>pseudo elements trong CSS <br> 
+        đây là dòng 2</h1>
+    <div class="box"></div>
+    <ul>
+        <li>::before</li>
+        <li>::after</li>
+        <li>::first-letter</li>
+        <li>::first-line</li>
+        <li>::section</li>
+    </ul>
+Bài 3: margin, border, padđing
+    kiểu solid sẽ trừ ra 0.2px border: 10px solid dimgray;
+    border-radius: 10px;
+
+    margin: tạo khoảng cách (top, right, bottom, left)
+    3 giá trị lấy ()
+
+    padding 
+    box-sizing: border-box;
+
+    background-size: 100%; không bị vỡ ảnh
+
+
