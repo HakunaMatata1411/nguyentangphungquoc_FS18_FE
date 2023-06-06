@@ -1,0 +1,8 @@
+1. position
+relative
+absolute
+fixed
+sticky
+2. justify-content: space-between
+flex-direction:
+https://flexboxfroggy.com/#vi
