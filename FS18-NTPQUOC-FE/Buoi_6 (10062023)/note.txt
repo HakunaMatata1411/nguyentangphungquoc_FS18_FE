@@ -1,0 +1,36 @@
+I. các thành phần của 1 trang web
+
+1. Header
+
+2. Navigation
+
+3. Breadcrum:
+không phải trang web nào cũng có, cho biết vị trí hiện tại
+vd: home>menu>...
+
+4. sidebar: tùy chọn bên góc trái
+(trang one page không có sidebar)
+
+5. slider
+
+6. content
+nội dung chính, nội dung được bao bởi container
+
+7. banner
+
+8. footer
+
+II.
+I didn't include the following line of code in my head tag, however my favicon still appears in my browser:
+
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+What's the purpose of including it?
+
+If you don't call the favicon, favicon.ico, you can use that tag to specify the actual path (incase you have it in an images/ directory). The browser/webpage looks for favicon.ico in the root directory by default.
+
+III.
+
+line-height bằng với height của header
+
+sans-serif định dạng chữ ko chân
+
