@@ -1,0 +1,117 @@
+let coures = [
+    {
+        id: 1,
+        name: 'PHP',
+        coin: 100,
+
+    },
+    {
+        id: 2,
+        name: 'Reactjs',
+        coin: 200,
+
+    },
+    {
+        id: 3,
+        name: 'NodeJs',
+        coin: 300
+    },
+    {
+        id: 4,
+        name: 'JS',
+        coin: 150
+    },
+    {
+        id: 5,
+        name: 'Java',
+        coin: 180
+    },
+    {
+        id: 6,
+        name: 'NodeJs',
+        coin: 350
+    }
+]
+
+var sports = [
+    {
+        name: 'Bơi lội',
+        gold: 11
+    },
+    {
+        name: 'Boxing',
+        gold: 3
+    },
+    {
+        name: 'Đạp xe',
+        gold: 4
+    },
+    {
+        name: 'Đấu kiếm',
+        gold: 5
+    },
+]
+
+// 23
+
+const sumMedal = sports.reduce((sum, sport) => sum + sport.gold, 0);
+console.log(sumMedal);
+
+totalMedal = sports.reduce((accumulator,currentValue)=>accumulator+currentValue.gold,0)
+console.log(totalMedal);
+
+const sports = [
+    {
+        name: 'Bóng rổ',
+        like: 6
+    },
+    {
+        name: 'Bơi lội',
+        like: 5
+    },
+    {
+        name: 'Bóng đá',
+        like: 10
+    },
+]
+console.log(getMostFavoriteSport(sports)) 
+// Output: [{ name: 'Bóng rổ, like: 6 }, { name: 'Bóng đá, like: 10 }]
+
+const calculateRating = (watchList) => {
+    let count = 0;
+    let sum = watchList.reduce((sumRate, rating)=>{
+        if(rating["Director"] === "Christopher Nolan") {
+            sumRate += parseFloat(rating["imdbRating"]);
+            count++;
+        }
+        return sumRate;
+    }, 0);
+    return sum / count;
+}   
+
+const calculateRating= (watchLists) => {
+let temp = 0 
+let count = 0
+    watchLists.forEach(element => {
+        if(element.Director == "Christopher Nolan") {
+            temp+= element.imdbRating*1;
+            count++
+        }
+    });
+    return temp/count
+
+}
+console.log(calculateRating(watchList));
+
+const result = (watchList)=>{
+    let check = watchList.filter((watchList,index)=>{
+        return watchList.Director==="Christopher Nolan"
+    })
+    // console.log(check);
+    let totalRate = check.reduce((sum,currenntValue)=> sum+ parseFloat(currenntValue.imdbRating),0)
+        calculateRating = totalRate/check.length
+
+    return calculateRating;
+}
+let cal=result(watchList)
+console.log(cal);

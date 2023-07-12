@@ -1,0 +1,9 @@
+01072023
+Object  
+"trong dau nhay" khong bi loi
+khai báo let objectName {key0: valve0,...}
+1. cách thêm giá trị vào Object thông qua key
+2. cách lấy giá trị từ Object thong qua key
+3. thêm thông qua biến 
+ myEmail = 'quocnguyen@gmail.com'
+ let Object = {[email]: myEmail}

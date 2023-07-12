@@ -1,0 +1,133 @@
+const months = ['Jan','Feb' , 'April', 'June'];
+Expected output: Array ["Jan", "Feb", "March", "April", "June"]
+Viết func
+
+const months = ['Jan','Feb' , 'April', 'June'];
+const handleMonth = (arr)=>{
+    arr.splice(2,0,'March');
+    return arr;
+}
+console.log(handleMonth(months));
+-------------------------------------
+
+const a = ["Wind", "Water", "Fire"];
+// 'Wind + Water + Fire'
+const func = (arr)=>{
+    let temp = ''
+    for (const iterator in arr) {
+        temp+=arr[iterator]
+            if(iterator<arr.length-1) temp+="+"  
+    }
+    return temp
+}
+const a = ["Wind", "Water", "Fire"];
+const creatString = (arr) => {
+    return arr.join(" + ");
+}
+console.log(creatString(a));
+-----------------------------------------
+
+const plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato'];
+// Expected output: "tomato"
+
+const getTomato = (arr, plant) => {
+    for(let i of arr) if(i === plant) return i;
+}
+console.log(getTomato(plants, 'tomato'));
+
+--------------------------------------
+
+const animals = ['pigs', 'goats', 'sheep'];
+ // ['pigs', 'goats', 'sheep', 'football', 'swimming']
+
+ const animals = ['pigs', 'goats', 'sheep'];
+ // ['pigs', 'goats', 'sheep', 'football', 'swimming']
+
+const sports = ['footbal','swimming'];
+
+const concatArr = (arr1, arr2) =>{
+    return arr1.concat(arr2);
+};
+
+console.log(concatArr(animals,sports));
+
+-------------------------
+
+ const names = ["Andrew", "Tyrone", "Paul", "Maria", "Gayatri"];
+//  "Andrew"
+
+const getAndrew = (arr, name) => {
+    for(let i of arr) if(i === name) return i;
+}
+console.log(getAndrew(names,'Andrew'));
+
+ const names = ["Andrew", "Tyrone", "Paul", "Maria", "Gayatri"];
+//  "Andrew"
+
+const getAndrew = (arr) => {
+    return arr.shift();
+}
+console.log(getAndrew(names));
+const names = ["Andrew", "Tyrone", "Paul", "Maria", "Gayatri"]
+const func = (arr,find="") =>{
+    return arr.filter(word => word === find);
+}
+console.log(func(names,"Andrew")+"");
+--------------------------------
+
+const filtered = [12, 5, 8, 130, 44]
+// filtered is [12, 130, 44]
+
+const filtered = [12, 5, 8, 130, 44]
+const tempArray = []
+let count = 0
+const funcArray = (array,index=0) =>{
+    if(index==array.length) return
+    if(array[index]>8) {
+        tempArray[count] = array[index]
+        count++
+    }
+    funcArray(array,index +=1 )
+}
+funcArray(filtered)
+console.log(tempArray)
+
+-----------------------------
+const inventory = [
+  { name: "apples", quantity: 2 },
+  { name: "bananas", quantity: 0 },
+  { name: "cherries", quantity: 5 },
+];  
+// { name: 'cherries', quantity: 5 }
+
+const inventory = [
+  { name: "apples", quantity: 2 },
+  { name: "bananas", quantity: 0 },
+  { name: "cherries", quantity: 5 },
+];
+
+let findObj=(arr,obj) => {
+  for (const i in arr){
+    if (arr[i].name === obj) {
+       return arr[i]
+      }
+    }
+}
+console.log(findObj(inventory,"cherries"))
+
+-----------------------------------
+// Expected results:
+var arr = [
+    ['name', 'La Minh'],
+    ['age', 18],
+];
+console.log(arrToObj(arr)); // { name: 'La Minh', age: 18 }
+
+const arrToObj = (arr) => {
+let obj = {}
+for (const val of arr){
+obj[val[0]] = val[1]
+}
+return obj;
+};
+console.log(arrToObj(arr));
