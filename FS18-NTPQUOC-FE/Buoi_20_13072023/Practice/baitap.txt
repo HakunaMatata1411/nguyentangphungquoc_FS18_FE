@@ -1,0 +1,89 @@
+Bconst array1 = [1, 4, 9, 16];
+// output const array1 = [4, 16, 36, 64];
+function powArr(arr, x) {
+    const tempArr = [];
+    for(let value of arr)
+    {
+        tempArr.push(value * x);
+    }
+    return tempArr;
+}
+console.log(powArr(array1, 4));
+---------------------
+
+const numbers = [1, 4, 9];
+const numbers = [1, 2, 3];
+
+es6 copy arr [...array]
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
+const numbers = [1, 4, 9];
+function sqrtArr(arr){
+    const tempArr =[];
+    for (const val of arr) {
+        tempArr.push(Math.sqrt(val))
+    }
+    return tempArr; 
+}
+console.log(sqrtArr(numbers));
+------------------------------
+
+const array1 = [1, 2, 3, 4];
+viết func tính tổng các ptus
+
+// const numbers = [1, 4, 9];
+const array1 = [1, 2, 3, 4];
+function sumArr(arr){
+    let sum = 0;
+    for (const val of arr) {
+        sum += val 
+    }
+        return sum; 
+    }
+
+console.log(sumArr(array1));
+
+---------------------------------
+
+const arraySparse = [1, 3, /* empty */, 7];
+// { element: 1 }
+// { element: 3 }
+// { element: 7 }
+// { numCallbackRuns: 3 }
+
+const arraySparse = [1, 3, /* empty */, 7];
+// { element: 1 }
+// { element: 3 }
+// { element: 7 }
+// { numCallbackRuns: 3 }
+
+function func1(arr){
+    let count = 0;
+    let show = [];
+    for(const val of arr){
+        if(val != undefined){
+           show.push(" element:" + val);
+            count += 1;
+        }
+    }
+    return show + "\n" + "numCallbackRuns: " + count;
+}
+function func2(arr){
+    let count = 0;
+    let show = [];
+    for(const val of arr){
+        if(val != undefined){
+            show.push("element:" + val);
+            count += 1;
+        }
+    }
+    return show;
+}
+
+console.log(func1(arraySparse));
+// console.log(func2(arraySparse));
+----------------------------------------------
+
+let depthArray = [1, 2, [3,4], 5, 6, [ 7, 8, 9]];
+let depthArray = [1,2,3,4,5,6,7,8,9];
+
