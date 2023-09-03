@@ -109,8 +109,8 @@ function handleEdit(id, name, level){
 
 
 // Render task list
-function renderTasks (action){
-    var html = action.map((value, index) =>{
+function renderTasks (tasks){
+    var html = tasks.map((value, index) =>{
         let level = (value.level === 'high') ? 'bg-danger': ((value.level === 'medium') ? 'bg-info': 'bg-dark');
         return `
             <tr>
