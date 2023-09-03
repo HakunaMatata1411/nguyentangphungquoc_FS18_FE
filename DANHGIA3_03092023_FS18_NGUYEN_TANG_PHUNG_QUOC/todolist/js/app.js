@@ -61,7 +61,7 @@ function saveTask (data,cb){
 }
 
 // Delete
-function handleDelete(id, cb) {
+function handleDelete(id) {
     if(confirm("Bạn có muốn xóa công việc không?")){
         let option = {
             method: "DELETE",
