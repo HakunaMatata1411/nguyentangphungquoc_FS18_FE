@@ -1,5 +1,0 @@
-
-module.exports = {
-    prefixAdmin: 'adminCCC',
-    
-};
